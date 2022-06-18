@@ -29,6 +29,8 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style/_commons.scss";
+@import "../assets/style/_variables.scss";
 #countdown{
     background-color: #F4F0EF;
 }
