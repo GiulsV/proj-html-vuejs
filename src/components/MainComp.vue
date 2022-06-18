@@ -1,5 +1,5 @@
 <template>
-  <!-- Main (9 sezioni) -->
+  <!-- Main (8 sezioni) -->
   <main>
     <!-- Modalità corsi -->
     <section class="container-fuid">
@@ -41,10 +41,14 @@
     </section>
 
     <!-- Testimonianze -->
-    <section></section>
+    <section>
+
+    </section>
 
     <!-- Corsi Online -->
-    <section></section>
+    <section class="">
+        <CourseComp/>
+    </section>
 
     <!-- Ultime dal Blog -->
     <section></section>
@@ -75,12 +79,14 @@
 <script>
 import CoachComp from "./CoachComp.vue";
 import VideoComp from "./VideoComp.vue"
+import CourseComp from "./CourseComp.vue"
 
 export default {
   name: 'MainComp',
   components: {
     CoachComp,
-    VideoComp
+    VideoComp,
+    CourseComp
 }
 }
 </script>
