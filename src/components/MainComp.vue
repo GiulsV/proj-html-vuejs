@@ -7,10 +7,38 @@
     </section>
 
     <!-- Text -->
-    <section></section>
-
+       <section id="about" class="container-fluid">
+           <div class="wrapper ">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 text-center">
+                            <img src="@/assets/images/artist-quote-icon.png" alt="">
+                            <p class="">
+                                I coach and mentor visual artists, like you, to Create Like You Mean It	
+                                
+                            </p>
+                            <p>Martin Garrix</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <p class="text-left">
+                                As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaningful and authentic artist you truly want to be.I support artists in crafting and living a creative life as well as feeling good about themselves and their art.
+                            </p>  
+                            <p>
+                                As an artist and an educator for nearly 30 years, I understand what it takes to create.
+                            </p>                         
+                            <a class="btn btn-default" href="#" role="button">
+                                <span>Get Started</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!-- Fake video -->
-    <section></section>
+    <section class="" id="ms_video">
+        <VideoComp/>
+
+    </section>
 
     <!-- Testimonianze -->
     <section></section>
@@ -46,12 +74,14 @@
 
 <script>
 import CoachComp from "./CoachComp.vue";
+import VideoComp from "./VideoComp.vue"
 
 export default {
   name: 'MainComp',
   components: {
     CoachComp,
-    }
+    VideoComp
+}
 }
 </script>
 
