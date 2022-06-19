@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: "CourseComp",
+  name: "CoachComp",
   data() {
     return {
       coachCard: [
