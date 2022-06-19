@@ -5,11 +5,11 @@
       <h3>Latest Online Courses</h3>
     </div>
 
-    <div class="row d-flex" >
+    <div class="row d-flex justify-content-center" >
       <div class="col" v-for="(link, index) in courseCards" :key="index" id="ms_corsi">
         <div class="card h-100 border-0">
-          <img class="card-img-top" :src="link.img" :alt="link.alt" />
-          <div class="card-body">
+          <img class="card-img-top rounded-0" :src="link.img" :alt="link.alt" />
+          <div class="card-body ms_card_body">
             <p class="card-text">
               {{ link.price }}
             </p>
@@ -101,18 +101,16 @@ export default {
 #ms_corsi{
     flex-basis: calc(100% / 4);
 }
-.card-body{
+.ms_card_body{
     width: 80%;
     &:hover{
-        transform: translateY(-20px);
+        transform: translateY(-25px);
         background-color: white;
         border: 2px solid orange;
     }
 }
-.card {
-  width: 100%
-}
-img {
-   width: 100%;
+
+img{
+  width: 95%;
 }
 </style>

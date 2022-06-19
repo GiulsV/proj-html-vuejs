@@ -3,7 +3,7 @@
 <header>
     <!-- Section countdown -->
     <section class="container-fluid d-flex flex-row justify-content-center" id="countdown">
-        <p class="align-self-center"> Start tomorrow our biggest event of the year <i class="far fa-clock"></i> 00:00:00:00 <button>GET ticket</button></p>
+        <p class="align-self-center"> Start tomorrow our biggest event of the year <i class="far fa-clock"></i> 00:00:00:00 <a class="btn bt_orange" href="#" role="button">Get Ticket</a></p>
         
     </section>
     <!-- Header Navigazione Dinamico-->
