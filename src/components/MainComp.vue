@@ -26,9 +26,7 @@
                             <p>
                                 As an artist and an educator for nearly 30 years, I understand what it takes to create.
                             </p>                         
-                            <a class="btn btn-default" href="#" role="button">
-                                <span>Get Started</span>
-                            </a>
+                            <a class="btn bt_red" href="#" role="button">Get Started</a> 
                         </div>
                     </div>
                 </div>

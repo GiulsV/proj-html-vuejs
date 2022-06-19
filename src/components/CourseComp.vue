@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center">
-        <button >View all courses</button>
+        <a class="btn bt_red" href="#" role="button">Get Started <i class="fa-solid fa-arrow-right"></i></a> 
     </div>
     
   </div>

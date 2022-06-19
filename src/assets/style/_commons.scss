@@ -14,3 +14,26 @@ a {
     text-decoration: none;
     color:#797979;
 }
+.bt_orange {
+    background-color: $Orangebtn ;
+    color: white;
+    font-size: smaller;
+        &:hover{
+            background-color: $BluBtnHover;
+            border: none;
+            color: white;
+            font-size: smaller;
+        }
+}
+.bt_red{
+    background-color: $Redbtn;
+    color: $Orangebtn;
+    font-size: smaller;
+        &:hover{
+            background-color: $Orangebtn;
+            border: none;
+            color: white;
+            font-size: smaller;
+        }
+
+}
