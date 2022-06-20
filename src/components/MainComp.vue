@@ -39,9 +39,8 @@
     </section>
 
     <!-- Testimonianze -->
-    <section class="wrapper ms_padding">
+    <section class="wrapper ms_padding  ms_feedback">
       <FeedBack/>
-
     </section>
 
     <!-- Corsi Online -->
@@ -121,6 +120,10 @@ export default {
 
 
   }
+}
+
+.ms_feedback{
+  background-color: #FAF8F6;
 }
 
 #newsletter {
