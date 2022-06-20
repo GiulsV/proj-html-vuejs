@@ -48,8 +48,10 @@
         <CourseComp/>
     </section>
 
-    <!-- Ultime dal Blog -->
-    <section></section>
+    <!-- Blog -->
+    <section class="wrapper">
+      <BlogComp/>
+    </section>
 
     <!-- Eventi -->
     <section></section>
@@ -75,15 +77,17 @@
 
 <script>
 import CoachComp from "./CoachComp.vue";
-import VideoComp from "./VideoComp.vue"
-import CourseComp from "./CourseComp.vue"
+import VideoComp from "./VideoComp.vue";
+import CourseComp from "./CourseComp.vue";
+import BlogComp from "./BlogComp.vue"
 
 export default {
   name: 'MainComp',
   components: {
     CoachComp,
     VideoComp,
-    CourseComp
+    CourseComp,
+    BlogComp
 }
 }
 </script>
@@ -91,6 +95,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/_commons.scss";
 @import "../assets/style/_variables.scss";
+
 #about{
   height: 60%;
   
