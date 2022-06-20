@@ -39,7 +39,8 @@
     </section>
 
     <!-- Testimonianze -->
-    <section>
+    <section class="wrapper ms_padding">
+      <FeedBack/>
 
     </section>
 
@@ -83,6 +84,7 @@ import VideoComp from "./VideoComp.vue";
 import CourseComp from "./CourseComp.vue";
 import BlogComp from "./BlogComp.vue"
 import EventComp from "./EventComp.vue"
+import FeedBack from "./FeedBack.vue"
 
 export default {
   name: 'MainComp',
@@ -91,7 +93,8 @@ export default {
     VideoComp,
     CourseComp,
     BlogComp,
-    EventComp
+    EventComp,
+    FeedBack
 }
 }
 </script>
