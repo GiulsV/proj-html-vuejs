@@ -15,6 +15,14 @@
 </script>
 
 <style lang="scss" scoped>
+#ms_video{
+    padding: 60px 0;
+    background-image: url('@/assets/images/Sagome/maxcoach-shape-05-150x150.png'), 
+                      url('@/assets/images/Sagome/maxcoach-shape-12-150x150.png');
+    background-position: top 5% left 10%,
+                        bottom 5% right 5%;
+    background-repeat: no-repeat;
+}
 
 
 </style>
