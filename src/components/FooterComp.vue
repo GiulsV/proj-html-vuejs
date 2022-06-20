@@ -1,7 +1,7 @@
 <template>
   <!-- Footer dinamico-->
   <footer>
-    <div class="container d-flex justify-content-between text-dark" id="ms_container">
+    <div class="container d-flex justify-content-between text-dark ms_padding" id="ms_container">
     <!-- sezione indirizzo -->
     <section id="address" class="d-flex flex-wrap">
       <h5>Address</h5>
