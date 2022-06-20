@@ -54,7 +54,7 @@
     </section>
 
     <!-- Eventi -->
-    <section class="wrapper ms_padding">
+    <section class="ms_padding">
       <EventComp/>
     </section>
 

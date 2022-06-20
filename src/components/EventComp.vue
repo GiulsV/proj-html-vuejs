@@ -1,14 +1,21 @@
 <template>
-  <div class="container">
-    <div class="card mb-3" style="max-width: 540px" v-for="(event, i) in eventCards" :key="i">
-      <div class="row g-0">
-        <div class="col-md-4" >
+  <div class="container-fluid">
+    <div class="text-center">
+    <h2>Upcoming Event</h2>
+    <h4>Let's work togheter</h4>
+    </div>
+    
+    <div class="container">
+   <div class="row justify-content-around ">
+    <div class="card mb-3 rounded-0 border-0"  v-for="(event, i) in eventCardsFirst" :key="'A'+ i">
+      <div class="row g-0" >
+        <div class="col-4 " >
           <img
-            class="img-fluid rounded-start" :src="event.img" :alt="event.alt"
+            class="img-fluid rounded-0" :src="event.img" :alt="event.alt"
           />
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
+        <div class="col-8">
+          <div class="card-body"> 
             <p class="card-text" >
                {{ event.date }}
             </p>
@@ -22,16 +29,47 @@
           </div>
         </div>
       </div>
+       </div>
+       </div>
+
+  <div class="row justify-content-around ms_event">
+    <div class="card mb-3 rounded-0 border-0"  v-for="(event, i) in eventCardsSecond" :key="'B'+i">
+      <div class="row g-0" >
+
+
+        <div class="col-8">
+          <div class="card-body"> 
+            <p class="card-text" >
+               {{ event.date }}
+            </p>
+            <h5 class="card-title">{{ event.title }}</h5>
+            <p class="card-text" >
+               {{ event.text }}
+            </p>
+            <p class="card-text">
+              <small class="text-muted"><i class="fas fa-map-marker-alt"></i>{{event.place}}</small>
+            </p>
+          </div>
+        </div>
+        <div class="col-4 " >
+                  <img
+            class="img-fluid rounded-0" :src="event.img" :alt="event.alt"
+          />
+        </div>
+      </div>
+       </div>
+       </div>
     </div>
-  </div>
-</template>
+    </div>
+
+    </template>
 
 <script>
 export default {
   name: "EventComp",
   data() {
     return {
-      eventCards: [
+      eventCardsFirst: [
         {
           img: require("@/assets/images/event/artist-event-01-250x300.jpg"),
           alt: "event",
@@ -46,7 +84,9 @@ export default {
           title: "Drawing and Shading:Complete Course",
           text: "Texas,USA",
         },
-        {
+        ],
+        
+        eventCardsSecond:[{
           img: require("@/assets/images/event/artist-event-03-250x300.jpg"),
           alt: "event",
           date:"Nov 22, 2020",
@@ -67,4 +107,16 @@ export default {
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "../assets/style/_commons.scss";
+@import "../assets/style/_variables.scss";
+
+.card{
+  max-width: 540px;
+}
+.ms_event{
+      margin-left: 100px;
+}
+
+// style=""
+</style>
