@@ -49,12 +49,14 @@
     </section>
 
     <!-- Blog -->
-    <section class="wrapper">
+    <section class="wrapper ms_padding">
       <BlogComp/>
     </section>
 
     <!-- Eventi -->
-    <section></section>
+    <section class="wrapper ms_padding">
+      <EventComp/>
+    </section>
 
     <!-- Newsletter -->
     <section id="newsletter" class="d-flex justify-content-center align-items-center ms_padding">
@@ -80,6 +82,7 @@ import CoachComp from "./CoachComp.vue";
 import VideoComp from "./VideoComp.vue";
 import CourseComp from "./CourseComp.vue";
 import BlogComp from "./BlogComp.vue"
+import EventComp from "./EventComp.vue"
 
 export default {
   name: 'MainComp',
@@ -87,7 +90,8 @@ export default {
     CoachComp,
     VideoComp,
     CourseComp,
-    BlogComp
+    BlogComp,
+    EventComp
 }
 }
 </script>
