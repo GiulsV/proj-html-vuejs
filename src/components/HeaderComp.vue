@@ -41,10 +41,11 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/_commons.scss";
 @import "../assets/style/_variables.scss";
+
 #countdown {
   background-color: #f4f0ef;
   height: 40px;
-  i{
+  i {
     color: $CodGray;
   }
 }
@@ -54,9 +55,9 @@ export default {
     url("@/assets/images/Sagome/artist-shape-01.png");
   background-position: top left, top right 6%;
   background-repeat: no-repeat;
-//   background-size: contain;
+  //   background-size: contain;
 
-    height: 70vh;
-vertical-align: middle;
+  height: 70vh;
+  vertical-align: middle;
 }
 </style>
