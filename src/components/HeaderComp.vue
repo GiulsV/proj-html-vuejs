@@ -1,6 +1,7 @@
 <template>
   <!-- Header -->
   <header>
+        <a name="top"></a>
     <!-- Section countdown -->
     <section
       class="container-fluid d-flex flex-row justify-content-center"
