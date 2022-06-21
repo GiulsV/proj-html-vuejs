@@ -18,7 +18,7 @@
     </section>
 
     <!-- Jumbotron -->
-    <section id="ms_hero">
+    <section id="ms_hero" class="jumbotron-fluid d-flex">
       <HeroComp />
     </section>
   </header>
@@ -50,11 +50,13 @@ export default {
 }
 #ms_hero {
   background-color: #fbf9f6;
-  height: 80vh;
   background-image: url("@/assets/images/Sagome/artist-shape-02.png"),
     url("@/assets/images/Sagome/artist-shape-01.png");
   background-position: top left, top right 6%;
   background-repeat: no-repeat;
 //   background-size: contain;
+
+    height: 70vh;
+vertical-align: middle;
 }
 </style>
