@@ -6,48 +6,43 @@
     </div>
     
     <div class="container">
-   <div class="row justify-content-around ">
+   <div class="row justify-content-center ">
     <div class="card mb-3 rounded-0 border-0"  v-for="(event, i) in eventCardsFirst" :key="'A'+ i">
-      <div class="row g-0" >
+      <div class="row g-0 align-items-center" >
         <div class="col-4 " >
           <img
             class="img-fluid rounded-0" :src="event.img" :alt="event.alt"
           />
         </div>
         <div class="col-8">
-          <div class="card-body"> 
-            <p class="card-text" >
+          <div class="card-body ms-4 lh-lg"> 
+            <small class="card-text text-muted" >
                {{ event.date }}
-            </p>
-            <h5 class="card-title">{{ event.title }}</h5>
-            <p class="card-text" >
+            </small>
+            <h6 class="card-title">{{ event.title }}</h6>
+            <p class="card-text text-muted" ><i class="fas fa-map-marker-alt"></i>
                {{ event.text }}
             </p>
-            <p class="card-text">
-              <small class="text-muted"><i class="fas fa-map-marker-alt"></i>{{event.place}}</small>
-            </p>
+
           </div>
         </div>
       </div>
        </div>
        </div>
 
-  <div class="row justify-content-around ms_event ms_padding_title">
+  <div class="row justify-content-center ms_event ms_padding_title">
     <div class="card mb-3 rounded-0 border-0"  v-for="(event, i) in eventCardsSecond" :key="'B'+i">
-      <div class="row g-0" >
-
-
+      <div class="row g-0 text-end align-items-center" >
         <div class="col-8">
-          <div class="card-body"> 
-            <p class="card-text" >
+          <div class="card-body me-4 lh-lg"> 
+            <small class="card-text text-muted" >
                {{ event.date }}
-            </p>
-            <h5 class="card-title">{{ event.title }}</h5>
-            <p class="card-text" >
+            </small>
+            <h6 class="card-title">{{ event.title }}</h6>
+            <p class="card-text text-muted" >
+              <i class="fas fa-map-marker-alt"></i>
                {{ event.text }}
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><i class="fas fa-map-marker-alt"></i>{{event.place}}</small>
+
             </p>
           </div>
         </div>
