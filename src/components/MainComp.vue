@@ -54,7 +54,7 @@
     </section>
 
     <!-- Eventi -->
-    <section class="ms_padding">
+    <section class="ms_padding bg_image">
       <EventComp/>
     </section>
 
@@ -121,7 +121,11 @@ export default {
 
   }
 }
-
+.bg_image{
+  background-image: url('@/assets/images/Sagome/maxcoach-shape-13.png');
+  background-repeat: no-repeat;
+  background-position: top 5% right;
+}
 .ms_feedback{
   background-color: #FAF8F6;
 }

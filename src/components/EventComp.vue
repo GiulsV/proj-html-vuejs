@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-    <div class="text-center">
+  <div class="container-fluid ">
+    <div class="text-center ms_padding_title">
     <h2>Upcoming Event</h2>
     <h4>Let's work togheter</h4>
     </div>
@@ -32,7 +32,7 @@
        </div>
        </div>
 
-  <div class="row justify-content-around ms_event">
+  <div class="row justify-content-around ms_event ms_padding_title">
     <div class="card mb-3 rounded-0 border-0"  v-for="(event, i) in eventCardsSecond" :key="'B'+i">
       <div class="row g-0" >
 
@@ -111,6 +111,13 @@ export default {
 @import "../assets/style/_commons.scss";
 @import "../assets/style/_variables.scss";
 
+h2{
+  color:$Cerulean;
+  font-family: 'Satisfy', cursive;
+}
+h4{
+  font-weight: bold;
+}
 .card{
   max-width: 540px;
 }
@@ -118,5 +125,4 @@ export default {
       margin-left: 100px;
 }
 
-// style=""
 </style>
