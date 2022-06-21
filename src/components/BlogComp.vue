@@ -1,29 +1,30 @@
 <template>
-  <div class="container">
-    <div class="text-center">
+  <div class="container" id="ms_card">
+    <div class="text-center ms_padding_title">
       <h2>Articles and Tips</h2>
-      <h3>Latest from the Blog</h3>
+      <h4>Latest from the Blog</h4>
     </div>
 
-    <div class="row d-flex justify-content-center" >
-      <div class="col" v-for="(link, index) in blogCards" :key="index" id="ms_corsi">
-        <div class="card">
+    <div class="row d-flex justify-content-center " >
+      <div class="col ms_card_blog" v-for="(link, index) in blogCards" :key="index">
+        <div class="card border-0  " >
           <img class="card-img-top rounded-0" :src="link.img" :alt="link.alt" />
-          <div class="card-body ms_card_body">
-            <p class="card-text">
+          <div class="card-body ">
+            <small class="card-text text-muted">
               {{ link.tag}}
-            </p>
+            </small>
             <p class="card-title mt-3">{{ link.title }}</p>
 
             <p class="card-text">
-              <small class="text-muted"><i class="far fa-calendar"></i>{{ link.date}} <i class="far fa-eye"></i>{{link.views}}</small>
+              <small class="text-muted">
+                <i class="far fa-calendar"></i>{{ link.date}} 
+                <i class="far fa-eye"></i>{{link.views}}
+              </small>
             </p>
           </div>
         </div>
       </div>
-    </div>
-
-    
+    </div>  
   </div>
 </template>
 
@@ -66,4 +67,26 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/_commons.scss";
 @import "../assets/style/_variables.scss";
+#ms_card{
+  background-image: url("@/assets/images/Sagome/maxcoach-shape-05.png");
+  background-repeat: no-repeat;
+  background-position: top 17% right 63%;
+}
+
+h2{
+  color:$Cerulean;
+  font-family: 'Satisfy', cursive;
+}
+h4{
+  font-weight: bold;
+}
+.ms_card_blog:first-child{
+  margin-top: 13%;
+}
+.ms_card_blog:last-child{
+  margin-top: 5%;
+}
+i{
+  margin: 5px 5px;
+}
 </style>

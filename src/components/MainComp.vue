@@ -50,7 +50,7 @@
     </section>
 
     <!-- Blog -->
-    <section class="wrapper ms_padding">
+    <section class="wrapper ms_padding" id="ms_blog">
       <BlogComp/>
     </section>
 
