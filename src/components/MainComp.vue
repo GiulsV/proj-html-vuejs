@@ -44,7 +44,7 @@
     </section>
 
     <!-- Corsi Online -->
-    <section class="ms_padding">
+    <section class="ms_padding bg_course">
         <CourseComp/>
     </section>
 
@@ -120,6 +120,13 @@ export default {
 
 
   }
+
+}
+
+.bg_course{
+  background-image: url('@/assets/images/Sagome/artist-shape-01-600x577.png');
+  background-repeat: no-repeat;
+  background-position: top 5% right;
 }
 .bg_image{
   background-image: url('@/assets/images/Sagome/maxcoach-shape-13.png');
