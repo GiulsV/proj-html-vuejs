@@ -2,7 +2,8 @@
   <!-- Main (8 sezioni) -->
   <main>
     <!-- Modalità corsi -->
-    <section class="container-fuid ms_padding">
+    <section class="ms_padding ms_coach">
+
        <CoachComp /> 
     </section>
 
@@ -101,6 +102,15 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/_commons.scss";
 @import "../assets/style/_variables.scss";
+
+.ms_coach{
+  background-image: url('@/assets/images/Sagome/maxcoach-shape-14.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 20% right ;
+  
+
+}
 
 #about{
   height: 60%;
