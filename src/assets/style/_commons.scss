@@ -1,5 +1,7 @@
 @import "./_variables.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +30,9 @@ a {
 .bt_red{
     background-color: $Redbtn;
     color: $Orangebtn;
-    font-size: smaller;
+    font-size: small;
+    font-weight: bold;
+    padding: 0.4rem 1.5rem;
         &:hover{
             background-color: $Orangebtn;
             border: none;
@@ -40,4 +44,13 @@ a {
 .ms_padding{
     padding-top: 2.5rem;
     padding-bottom: 5rem;
+}
+.ms_padding_title{
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.ms_color-text{
+    color:$Orangebtn;
+    font-weight: bold;
 }
