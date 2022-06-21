@@ -6,11 +6,11 @@
       class="container-fluid d-flex flex-row justify-content-center"
       id="countdown"
     >
-      <p class="align-self-center">
-        Start tomorrow our biggest event of the year
-        <i class="far fa-clock"></i> 00:00:00:00
-        <a class="btn bt_orange" href="#" role="button">Get Ticket</a>
-      </p>
+      <small class="align-self-center text-muted px-2">
+        Start tomorrow our biggest event of the year...
+        <i class="far fa-clock px-2"> 00 : 00 : 00 : 00</i>
+        <a class="btn bt_orange px-2" href="#" role="button">Get Ticket</a>
+      </small>
     </section>
     <!-- Header Navigazione Dinamico-->
     <section>
@@ -43,6 +43,10 @@ export default {
 @import "../assets/style/_variables.scss";
 #countdown {
   background-color: #f4f0ef;
+  height: 40px;
+  i{
+    color: $CodGray;
+  }
 }
 #ms_hero {
   background-color: #fbf9f6;
