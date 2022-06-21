@@ -23,7 +23,7 @@
                   :href="link.src"
                   class="nav-link py-3 px-0 px-lg-3 text-dark"
                 >
-                  {{ link.label }}<i class="fas fa-chevron-down"></i>
+                  {{ link.label }} <small><i class="fas fa-chevron-down text-muted"></i></small>
                 </a>
               </li>
             </ul>
@@ -97,7 +97,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style/_commons.scss";
+@import "../assets/style/_variables.scss";
 .logo img {
   width: 8rem;
+}
+.fa-chevron-down{
+ font-size: 9px;
+ vertical-align: middle;
+}
+i > .fab{
+  color: $Boulder;
 }
 </style>
