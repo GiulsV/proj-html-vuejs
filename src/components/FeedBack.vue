@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid d-flex flex-column">
-    <div class="text-center">
+    <div class="text-center ms_padding_title">
     <h2>Testimonials</h2>
     <h4>Why do people love me?</h4>
     </div>
@@ -8,8 +8,8 @@
     <div class="d-flex">
     <div class="card rounded-0 border-0 mx-4 px-3 ms_opacity" v-for="(link, i) in feedBackList" :key="i">
       <div class="card-body">
-        <h5 class="card-title">{{link.title}}</h5>
-        <p class="card-text">
+        <h6 class="card-title fw-bold">{{link.title}}</h6>
+        <p class="card-text text-muted fs-6">
             {{link.text}}
         </p>
 
@@ -69,8 +69,21 @@ export default {
 @import "../assets/style/_commons.scss";
 @import "../assets/style/_variables.scss";
 
+h2 {
+  color: $Cerulean;
+  font-family: "Satisfy", cursive;
+}
+h4 {
+  font-weight: bold;
+}
+.ms_opacity{cursor: pointer;}
 .ms_opacity:nth-child(odd){
     opacity: 0.5;
+    
+      &:hover{
+        opacity: 1;
+        
+      }
 
   } 
   .fa-circle{

@@ -108,8 +108,6 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 20% right ;
-  
-
 }
 
 #about{
@@ -132,7 +130,11 @@ export default {
   }
 
 }
-
+#ms_video{
+  background-image: url('@/assets/images/wave.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 .bg_course{
   background-image: url('@/assets/images/Sagome/artist-shape-01-600x577.png');
   background-repeat: no-repeat;
